@@ -1,0 +1,47 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'电子券详情'}}" />
+<view class="article couponDetail {{showQrcode}}" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+    <view class="content flexv">
+        <image class="pic" src="{{appData.webUrl}}coupon/pic1.jpg"></image>
+        <view class="contbox">
+            <view class="bord1">
+                <view class="tit">到店礼品</view>
+                <view class="scrollbox">
+                    <scroll-view scroll-y class="scrollView">
+                        <view class="item time">
+                            <text class="lab">可兑换时间</text>
+                            <text class="txt1">2019.10.01-2019.10.07</text>
+                        </view>
+                        <view class="item">
+                            <text class="lab">物品详情</text>
+                            <text class="txt1">到店出示二维码即可领取铂金定制手袋一枚，\n数量有限领完即止。</text>
+                        </view>
+                        <view class="item">
+                            <text class="lab">使用规则</text>
+                            <text class="txt1">兑换时间： 10：00-21：30\n兑换时请点击“即刻使用”， 出示兑换二维码\n图片仅供参考，礼品以实物为准，过期不予兑换。</text>
+                        </view>
+                    </scroll-view>
+                </view>
+                <view class="btn1" catchtap="couponQrcode">
+                    <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                    <text class="btn1txt">即刻使用</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="qrCode">
+        <view class="bord1">
+            <view class="contv">
+                <view class="tit2">铂金到店礼 电子兑换券</view>
+                <image src="{{appData.webUrl}}coupon/ewm.jpg" class="qrImg"></image>
+            </view>
+            <view class="btn1" catchtap="qrCodeHide">
+                <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                <text class="btn1txt">关闭</text>
+            </view>
+        </view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

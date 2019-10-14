@@ -1,0 +1,52 @@
+/**标准16:9*/
+.formBox{padding: 20rpx;}
+.ticketUpload .content{}
+.ticketUpload .tit1{font-size: 25rpx;color: #8a8989;padding: 61rpx 0 0 36rpx;}
+.ticketUpload .scrollView{position: absolute;left:0;width: 100%;top:120rpx;bottom: 300rpx;}
+.ticketUpload .item{margin: 30rpx 30rpx 30rpx 36rpx; padding: 34rpx;}
+.ticketUpload .item text{position: relative;font-size: 25rpx;color: #8a8989;line-height: 72rpx;display: block;}
+.ticketUpload .tips{font-size: 25rpx;color: #8a8989;line-height: 56rpx; }
+.ticketUpload .botcont{bottom: 70rpx;position: absolute;width: 100%;left: 0;text-align: center;}
+.ticketUpload .botcont .btn1{margin:  70rpx auto 0;}
+.ticketUpload .input{border: #eee 1rpx solid;margin-bottom: 20rpx;padding: 20rpx;height: 70rpx;line-height: 30rpx;box-sizing:border-box;}
+/**
+   css media 适配
+*/
+
+/** iphone系列 */
+
+@media screen and (width:320px), screen and (width:375px), screen and (width:414px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓系列 */
+
+@media screen and (width:360px), screen and (width:393px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 15:9 */
+
+@media screen and (width:360px) and (max-height:540px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 18:9 */
+
+@media screen and (width:360px) and (min-height:600px),
+       screen and (width:412px) and (min-height:680px),
+       screen and (width:393px) {
+  .cssMedia {
+  }
+}
+
+/** iphoneX */
+
+@media screen and (width:375px) and (min-height:724px),
+       screen and (width:414px) and (min-height:808px) {
+  .cssMedia {
+  }
+}

@@ -1,0 +1,79 @@
+/**标准16:9*/
+.myCard .tabtit1{flex: 0 0 175rpx ;width: 100%;justify-content: center;}
+.myCard .tabtit1 .btn1{margin: 0 19rpx;}
+.myCard .tabBox{flex:auto;overflow: hidden;width: 100%;}
+.myCard .tabBox .tabTit{text-align: center;font-size: 0;}
+.myCard .tabBox .tabTit .item{width: 201rpx;height: 55rpx;background: #c0c0c0;transition:background .3s,color .3s;border-radius: 9rpx 9rpx  0 0;margin: 0 6rpx;display: inline-block;font-size: 25rpx;letter-spacing: 7rpx;font-weight: bold;line-height: 55rpx;color: #fff;}
+.myCard .tabBox .tabCont{background: rgba(255,255,255,.6);width: 690rpx;left: 27rpx; border-radius: 20rpx;padding: 21rpx 13rpx;overflow: hidden;position: absolute;top:55rpx;bottom: 30rpx;box-shadow: 7rpx 3rpx 7rpx 0rpx rgba(207,213,216,.5);}
+.myCard .tabList{height: 100%;display: none;}
+.myCard .scrollView{height: 95%;}
+.myCard .list{display: none; }
+.myCard .list .li{width: 658rpx;height: 300rpx;margin-top: 20rpx;}
+.myCard .list .li image{width: 100%;height: 100%;}
+
+
+.showCoupon1 .tabtit1 .btn1:nth-child(2) image{filter: grayscale(100%);}
+.showCoupon1 .tabtit1 .btn1:nth-child(2) text{color: #fff;}
+.showCoupon2 .tabtit1 .btn1:nth-child(1) image{filter: grayscale(100%);}
+.showCoupon2 .tabtit1 .btn1:nth-child(1) text{color: #fff;}
+
+.showCoupon1 .tabList:nth-child(1){display: block;}
+.showCoupon2 .tabList:nth-child(2){display: block;}
+
+.myCard .showGiftClass1 .tabTit .item:nth-child(1){color: #9cd5eb;background: rgba(255,255,255,.6);box-shadow: 7rpx -3rpx 7rpx 0rpx rgba(207,213,216,.5);}
+.myCard .showGiftClass2 .tabTit .item:nth-child(2){color: #9cd5eb;background: rgba(255,255,255,.6);box-shadow: 7rpx -3rpx 7rpx 0rpx rgba(207,213,216,.5);}
+.myCard .showGiftClass3 .tabTit .item:nth-child(3){color: #9cd5eb;background: rgba(255,255,255,.6);box-shadow: 7rpx -3rpx 7rpx 0rpx rgba(207,213,216,.5);}
+
+.myCard .showGiftClass1 .list1{display: block;}
+.myCard .showGiftClass2 .list2{display: block;}
+.myCard .showGiftClass3 .list3{display: block;}
+
+.myCard .showCouponClass1 .tabTit .item:nth-child(1){color: #9cd5eb;background: rgba(255,255,255,.6);box-shadow: 7rpx -3rpx 7rpx 0rpx rgba(207,213,216,.5);}
+.myCard .showCouponClass2 .tabTit .item:nth-child(2){color: #9cd5eb;background: rgba(255,255,255,.6);box-shadow: 7rpx -3rpx 7rpx 0rpx rgba(207,213,216,.5);}
+.myCard .showCouponClass3 .tabTit .item:nth-child(3){color: #9cd5eb;background: rgba(255,255,255,.6);box-shadow: 7rpx -3rpx 7rpx 0rpx rgba(207,213,216,.5);}
+.myCard .showCouponClass1 .list1{display: block;}
+.myCard .showCouponClass2 .list2{display: block;}
+.myCard .showCouponClass3 .list3{display: block;}
+
+
+/**
+   css media 适配
+*/
+
+/** iphone系列 */
+
+@media screen and (width:320px), screen and (width:375px), screen and (width:414px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓系列 */
+
+@media screen and (width:360px), screen and (width:393px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 15:9 */
+
+@media screen and (width:360px) and (max-height:540px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 18:9 */
+
+@media screen and (width:360px) and (min-height:600px),
+       screen and (width:412px) and (min-height:680px),
+       screen and (width:393px) {
+  .cssMedia {
+  }
+}
+
+/** iphoneX */
+
+@media screen and (width:375px) and (min-height:724px),
+       screen and (width:414px) and (min-height:808px) {
+  .cssMedia {
+  }
+}

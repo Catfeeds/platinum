@@ -1,0 +1,77 @@
+<!--components/commonTop.wxml-->
+<template is="bg" />
+<view class='integral flexv'>
+    <view class="flex topbar">
+        <view class="curIntegral">当前会员积分<text>5500</text></view>
+        <view class='btn1' catchtap="myCard">
+            <image src="/images/index/btnbg.png" class="btn1bg"></image>
+            <text class="btn1txt">我的卡包</text>
+        </view>
+        <image src="/images/integraMall/line.jpg" class="line"></image>
+    </view>
+    <view class="tabBox {{showClass}}">
+        <view class="tabTit ">
+            <view class="item" catchtap="tabChange" data-id='1'>礼品</view>
+            <view class="item" catchtap="tabChange" data-id='2'>电子券</view>
+        </view>
+        <view class="tabCont">
+            <scroll-view scroll-y class="giftListCont">
+                <view class="giftList ">
+                    <view class="li locked" catchtap="giftDetail">
+                        <image src="{{appData.webUrl}}integraMall/pic1.jpg"></image>
+                        <view class="proName">日式创意涂鸦手腕袋</view>
+                        <view class="sorce">兑换所需积分 2500 </view>
+                    </view>
+                    <view class="li" catchtap="giftDetail">
+                        <image src="{{appData.webUrl}}integraMall/pic2.jpg"></image>
+                        <view class="proName">日式创意涂鸦手腕袋</view>
+                        <view class="sorce">兑换所需积分 2500 </view>
+                    </view>
+                    <view class="li" catchtap="giftDetail">
+                        <image src="{{appData.webUrl}}integraMall/pic1.jpg"></image>
+                        <view class="proName">日式创意涂鸦手腕袋</view>
+                        <view class="sorce">兑换所需积分 2500 </view>
+                    </view>
+                    <view class="li" catchtap="giftDetail">
+                        <image src="{{appData.webUrl}}integraMall/pic1.jpg"></image>
+                        <view class="proName">日式创意涂鸦手腕袋</view>
+                        <view class="sorce">兑换所需积分 2500 </view>
+                    </view>
+                    <view class="li" catchtap="giftDetail">
+                        <image src="{{appData.webUrl}}integraMall/pic2.jpg"></image>
+                        <view class="proName">日式创意涂鸦手腕袋</view>
+                        <view class="sorce">兑换所需积分 2500 </view>
+                    </view>
+                    <view class="li" catchtap="giftDetail">
+                        <image src="{{appData.webUrl}}integraMall/pic2.jpg"></image>
+                        <view class="proName">日式创意涂鸦手腕袋</view>
+                        <view class="sorce">兑换所需积分 2500 </view>
+                    </view>
+                </view>
+
+                <view class="couponList ">
+                    <view class="li" catchtap="couponDetail">
+                        <image src="{{appData.webUrl}}integraMall/p1.jpg"></image>
+                    </view>
+                    <view class="li" catchtap="couponDetail">
+                        <image src="{{appData.webUrl}}integraMall/p2.jpg"></image>
+                    </view>
+                    <view class="li" catchtap="couponDetail">
+                        <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                    </view>
+                    <view class="li" catchtap="couponDetail">
+                        <image src="{{appData.webUrl}}integraMall/p1.jpg"></image>
+                    </view>
+                    <view class="li" catchtap="couponDetail">
+                        <image src="{{appData.webUrl}}integraMall/p2.jpg"></image>
+                    </view>
+                    <view class="li" catchtap="couponDetail">
+                        <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                    </view>
+                </view>
+            </scroll-view>
+            <image src="/images/couponSubscribe/arr.png" class="arr"></image>
+        </view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

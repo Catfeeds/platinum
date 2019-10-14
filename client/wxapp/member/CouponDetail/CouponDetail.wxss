@@ -1,0 +1,69 @@
+/**标准16:9*/
+.couponDetail{}
+.couponDetail .content{transition:opacity .3s}
+.couponDetail .pic{width: 100%;height: 400rpx;flex:0 1 400rpx;margin-top: 20rpx;}
+.couponDetail .contbox{flex:auto;width: 100%;overflow: hidden;}
+.couponDetail .contbox .bord1{position: absolute;top:20rpx;bottom: 25rpx;left: 30rpx;right: 30rpx;border-radius: 0 0 18rpx 18rpx;}
+.couponDetail .scrollbox{position: absolute;top:90rpx;bottom: 110rpx;width: 100%;left: 0;}
+.couponDetail .scrollView{height: 100%;}
+
+.couponDetail .contbox .btn1{position: absolute;bottom: 40rpx;left: 50%;-webkit-transform:translateX(-50%);}
+.couponDetail .contbox .tit{font-size: 25rpx;color: #0b2b5d;letter-spacing: 5rpx;font-weight: bold;text-align: center;padding: 46rpx 0 20rpx;}
+.couponDetail .item{background: #fff;padding: 40rpx 50rpx;margin-bottom: 20rpx;}
+.couponDetail .item .lab{font-size: 25rpx;color: #606060;font-weight: bold;display: block;}
+.couponDetail .item .txt1{font-size: 20rpx;color: #8a8989;line-height: 33rpx;}
+.couponDetail .item.time{padding: 22rpx 50rpx;}
+.couponDetail .item.time .lab{display: inline-block;margin-right: 17rpx;}
+
+.qrCode{position: absolute;width: 100%;height: 100%;left: 0;top:0;padding: 16rpx 30rpx 25rpx;opacity: 0;pointer-events:none;transition:opacity .3s;}
+.qrCode .bord1{height: 100%;border-radius: 0 0 18rpx 18rpx;}
+.qrCode .contv{position: absolute;top:50%;-webkit-transform:translate(0,-50%);width: 100%;text-align: center;}
+.qrCode .qrImg{width: 445rpx;height: 445rpx;margin-top: 43rpx;}
+.qrCode .tit2{font-size: 30rpx;color: #0b2b5d;font-weight: bold;letter-spacing: 5rpx;}
+.qrCode .btn1{position: absolute;bottom: 40rpx;left: 50%;-webkit-transform:translateX(-50%);}
+
+.showQrcode .content{opacity: 0;}
+.showQrcode .qrCode{opacity: 1;pointer-events:all;}
+
+
+/**
+   css media 适配
+*/
+
+/** iphone系列 */
+
+@media screen and (width:320px), screen and (width:375px), screen and (width:414px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓系列 */
+
+@media screen and (width:360px), screen and (width:393px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 15:9 */
+
+@media screen and (width:360px) and (max-height:540px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 18:9 */
+
+@media screen and (width:360px) and (min-height:600px),
+       screen and (width:412px) and (min-height:680px),
+       screen and (width:393px) {
+  .cssMedia {
+  }
+}
+
+/** iphoneX */
+
+@media screen and (width:375px) and (min-height:724px),
+       screen and (width:414px) and (min-height:808px) {
+  .cssMedia {
+  }
+}

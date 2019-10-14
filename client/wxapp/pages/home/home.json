@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "member": "/components/member/member",
+    "index": "/components/index/index",
+    "integralMall": "/components/integralMall/integralMall"
+  }
+}

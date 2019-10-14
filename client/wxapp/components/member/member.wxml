@@ -1,0 +1,15 @@
+<!--components/commonTop.wxml-->
+<view class='member'>
+	<view class="flex">
+		<view class="item">积分查询</view>
+		<view class="item">我的卡包</view>
+		<view class="item" catchtap="myGift">我的礼品</view>
+	</view>
+  <view class="itembox">
+  	<view class="item" catchtap="accountSet">账户设置</view>
+  	<view class="item" catchtap="equity">会员权益</view>
+  	<view class="item" catchtap="rules">会员章程</view>
+  	<view class="item" catchtap="faq">FAQ</view>
+  	<view class="btn1" catchtap="cashOut">提现</view>
+  </view>
+</view>

@@ -1,0 +1,54 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'小票上传'}}" />
+<view class="article  {{modal_show}}" style="height:{{appData.articleHeight}}" catchtouchmove="true">
+    <!----section begin----->
+	<template is="bg" />
+	<template is="alert" data="{{alert}}"/>
+
+    <scroll-view scroll-y class="content">
+        <view class="formBox">
+        	<picker mode="date" value="{{date}}" start="2015-09-01" end="{{today}}" class="bord1 select" bindchange="bindDateChange">
+	            <view class="input ">{{date}} </view>
+	        </picker>
+	        <view class="bord1"><input bindinput="amount" value="{{amount}}" class="input " type="number" placeholder="购买金额"></input></view>
+	        <picker  class="bord1 select"  mode="selector" value="{{category.id}}"  range="{{category.arr}}" bindchange="categoryChange">
+	            <view class="input ">{{category.val}} </view>
+	        </picker>
+	        <picker  class="bord1 select"  mode="selector" value="{{brand.id}}"  range="{{brand.arr}}" bindchange="brandChange">
+	            <view class="input ">{{brand.val}} </view>
+	        </picker>
+	        <view class="bord1"><input bindinput="reason" value="{{reason}}" class="input" placeholder="购买理由"></input></view>
+	        <view class="lab">选择小票及产品图片</view>
+	        <view class="bord1 upImg" catchtap="upImg">
+	        	<text class="add"></text>
+	        	<image src="{{upPic}}"  mode="aspectFill"  class="pic"></image>
+	        	<text class="txt">拍摄示例</text>
+	        </view>
+
+	        <view class='btn1' catchtap="btnUpload">
+				<image src="/images/index/btnbg.png" class="btn1bg"></image>
+				<text class="btn1txt">上传</text>
+			</view>
+        </view>
+    </scroll-view>
+
+    <!-- modal -->
+    <view class="modal">
+    	<view class="cont flexv">
+    		<image src="/images/common/modalBg.png" class="modalBg"></image>
+	    	<image src="/images/modal/ticketPic.jpg" class="subsPic"></image>
+	    	<view class="txtbox">
+	    		<view class="tit">恭喜，上传成功！</view>
+	    		<view class="txt">审核通过可获相应积分</view>
+	    	</view>
+	    	<view class='btn1' catchtap="ar">
+                <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                <text class="btn1txt">AR红包返现</text>
+            </view>
+    		<image src="/images/common/close.png" class="close" catchtap="modalHide"></image>
+    	</view>
+    </view>
+
+
+</view>
+<import src="/pages/temp/temp.wxml" />

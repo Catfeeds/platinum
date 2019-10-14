@@ -1,0 +1,81 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'礼品券预约'}}" />
+<view class="article couponSubscribe" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <template is="bg" />
+    <!----section begin----->
+    <view class="content">
+        <view class="btns">
+            <view class='btn1'>
+                <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                <text class="btn1txt">选择地区</text>
+            </view>
+            <view class='btn1'>
+                <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                <text class="btn1txt">选择品牌</text>
+            </view>
+        </view>
+        <view class="shopBox bord1">
+            <view class="shopTit">选择店铺</view>
+            <scroll-view scroll-y class="shopList">
+                <view class="li" catchtap="shopChoose">
+                    <view class="shopInfo">
+                        <view class="name">CRD克徕帝珠宝</view>
+                        <view class="add">上海市虹口区溧阳路611号1号楼105室</view>
+                        <view class="dist">距离5.65km</view>
+                    </view>
+                    <view class="tel"><image src="/images/couponSubscribe/iTel.png" class="iTel"></image> 致电咨询</view>
+                </view>
+                <view class="li" catchtap="shopChoose">
+                    <view class="shopInfo">
+                        <view class="name">CRD克徕帝珠宝</view>
+                        <view class="add">上海市虹口区溧阳路611号1号楼105室</view>
+                        <view class="dist">距离5.65km</view>
+                    </view>
+                    <view class="tel"><image src="/images/couponSubscribe/iTel.png" class="iTel"></image> 致电咨询</view>
+                </view>
+                <view class="li" catchtap="shopChoose">
+                    <view class="shopInfo">
+                        <view class="name">CRD克徕帝珠宝</view>
+                        <view class="add">上海市虹口区溧阳路611号1号楼105室</view>
+                        <view class="dist">距离5.65km</view>
+                    </view>
+                    <view class="tel"><image src="/images/couponSubscribe/iTel.png" class="iTel"></image> 致电咨询</view>
+                </view>
+                <view class="li" catchtap="shopChoose">
+                    <view class="shopInfo">
+                        <view class="name">CRD克徕帝珠宝</view>
+                        <view class="add">上海市虹口区溧阳路611号1号楼105室</view>
+                        <view class="dist">距离5.65km</view>
+                    </view>
+                    <view class="tel"><image src="/images/couponSubscribe/iTel.png" class="iTel"></image> 致电咨询</view>
+                </view>
+                <view class="li" catchtap="shopChoose">
+                    <view class="shopInfo">
+                        <view class="name">CRD克徕帝珠宝</view>
+                        <view class="add">上海市虹口区溧阳路611号1号楼105室</view>
+                        <view class="dist">距离5.65km</view>
+                    </view>
+                    <view class="tel"><image src="/images/couponSubscribe/iTel.png" class="iTel"></image> 致电咨询</view>
+                </view>
+                <view class="li" catchtap="shopChoose">
+                    <view class="shopInfo">
+                        <view class="name">CRD克徕帝珠宝</view>
+                        <view class="add">上海市虹口区溧阳路611号1号楼105室</view>
+                        <view class="dist">距离5.65km</view>
+                    </view>
+                    <view class="tel"><image src="/images/couponSubscribe/iTel.png" class="iTel"></image> 致电咨询</view>
+                </view>
+                <view class="li" catchtap="shopChoose">
+                    <view class="shopInfo">
+                        <view class="name">CRD克徕帝珠宝</view>
+                        <view class="add">上海市虹口区溧阳路611号1号楼105室</view>
+                        <view class="dist">距离5.65km</view>
+                    </view>
+                    <view class="tel"><image src="/images/couponSubscribe/iTel.png" class="iTel"></image> 致电咨询</view>
+                </view>
+            </scroll-view>
+            <image src="/images/couponSubscribe/arr.png" class="arr"></image>
+        </view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

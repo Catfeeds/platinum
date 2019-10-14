@@ -1,0 +1,111 @@
+/* ---------------------------------------- 默认css针对16:9标准比例屏幕微信----------------------------------------*/
+
+.hide{display: none}
+.contv{height: 10rem;}
+
+article{background-image: url('../images/home/bg.jpg');background-size: cover}
+section{position: absolute;left: 0;top: 0;width: 100%;height: 100%;background-image: url('../images/home/bg.jpg');background-size: cover}
+.logo{background-image: url('../images/home/logo.png');width: 1.1rem;height: 1.1rem;margin: 0 auto;}
+.baseBtn{background-image: url('../images/home/btn.png');width: 2.86rem;height: 0.54rem;line-height: 0.58rem;color: #1d406f;position: absolute;left: 50%;margin-left: -1.43rem;bottom: 0;text-align: center;}
+
+/** loginUI */
+.loginUI{text-align: center;}
+.loginUI .info{padding-top: 0.7rem;}
+.loginUI .info p{color:#8a8989;font-size: 0.3rem;font-weight: bold;letter-spacing: 0.1rem;line-height: 0.4rem;}
+.loginUI .form{width: 6.7rem;margin: 0.8rem auto 0;}
+.loginUI .form .box{background: rgba(255, 255, 255, 0.5);border: 1px solid #cde3ed;border-radius: 0.2rem;height: 0.7rem;color: #8a8989;font-size: 0.25rem;padding: 0 0.4rem;margin-bottom: 0.5rem;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1)}
+.loginUI .form .box input{background: none;font-size: 0.25rem;margin-left: 0.3rem;color: #8a8989;}
+
+/** homeUI */
+.homeUI{text-align: center;}
+.homeUI .icon{background-image: url('../images/home/icon.png');width: 2rem;height: 2rem;margin: 2.46rem auto 1rem;}
+.homeUI .info{padding-top: 0.7rem;}
+.homeUI .info p{color:#8a8989;font-size: 0.3rem;font-weight: bold;letter-spacing: 0.1rem;line-height: 0.4rem;}
+.homeUI .btns{position: absolute;width: 100%;left: 0;bottom:0;text-align: center}
+.homeUI .btns .baseBtn{position: relative;left: 0;bottom: auto;margin: 0.7rem auto 0;}
+
+/** ticketUI */
+.ticketUI{text-align: center;}
+.ticketUI .title{padding-top: 2.4rem;font-size: 0.25rem;color: #8a8989}
+.ticketUI .form{width: 6.7rem;margin: 0.44rem auto 0;}
+.ticketUI .form .box{background: rgba(255, 255, 255, 0.5);border: 1px solid #cde3ed;border-radius: 0.2rem;height: 0.7rem;color: #8a8989;font-size: 0.25rem;padding: 0 0.4rem;margin-bottom: 0.5rem;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1)}
+.ticketUI .form .box input{background: none;font-size: 0.25rem;color: #8a8989;width: 100%;}
+
+.ticketUI .btns{position: absolute;width: 100%;left: 0;bottom:0;text-align: center}
+.ticketUI .btns .baseBtn{position: relative;left: 0;bottom: auto;margin: 0.7rem auto 0;}
+
+
+/** ticketListUI */
+.ticketListUI .panel{padding: 0.3rem;color: #8a8989;height: 100%;}
+.ticketListUI .title{font-size: 0.4rem;font-weight: bold}
+.ticketListUI .list{position: absolute;left: 0.3rem;bottom: 1.3rem;top: 1rem;right: 0.3rem;}
+.ticketListUI .swiper-container{width:100%;height: 100%;overflow: hidden;}
+.ticketListUI .swiper-slide{height: auto;}
+.ticketListUI .item{background: rgba(255, 255, 255, 0.5);border: 1px solid #cde3ed;border-radius: 0.2rem;font-size: 0.25rem;padding: 0.3rem;margin-bottom: 0.5rem;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);line-height: 0.65rem}
+.ticketListUI .btnBack{bottom: 0.4rem}
+
+/** ticketDetailUI */
+.ticketDetailUI{z-index: 1;}
+.ticketDetailUI .btns{position: absolute;width: 100%;left: 0;bottom:0.4rem;text-align: center;font-size: 0;}
+.ticketDetailUI .btns .baseBtn{position: relative;left: 0;bottom: auto;margin: 0.2rem auto 0;display: inline-block}
+.ticketDetailUI .top{padding: 0.12rem 0.3rem;}
+.ticketDetailUI .top .box{margin: 0 0.5rem;}
+.ticketDetailUI .top .box:nth-child(1){margin-left: 0;}
+.ticketDetailUI .top .box:nth-child(2){margin-right: 0;}
+.ticketDetailUI .top .boxItem{font-size: 0.25rem;color: #8a8989;margin: 0.3rem 0;line-height: 0.25rem;height: 0.25rem;overflow: hidden;}
+.ticketDetailUI .top .boxItem span{font-size: 0.25rem;font-weight: bold;padding-right: 0.1rem;}
+.ticketDetailUI .photo{position: absolute;left: 0;right: 0;top: 2.2rem;bottom: 2rem;background: #000}
+.ticketDetailUI .photo .shell{width: 100%;height: 100%;}
+.ticketDetailUI .photo .shell canvas{ transform-origin: 0 0;}
+
+/** sucUI */
+.sucUI{background: #0b2b5d;z-index: 9;}
+.sucUI .icon{background-image: url('../images/home/suc.jpg');width: 100%;height: 7.5rem;}
+.sucUI .icon .title{background-image: url('../images/home/suc_icon.png');width: 2.1rem;height: 0.6rem;position: absolute;left: 50%;margin-left: -1.05rem;bottom: 0.2rem}
+
+
+/** ticketTipUI */
+.ticketTipUI{background: rgba(0, 0, 0, 0.8);z-index: 10;}
+.ticketTipUI .box{position: absolute;left: 50%;top:50%;width:6.6rem;height:10.07rem;text-align: center;top: 50%;transform: translateX(-50%) translateY(-55%);background-image: url('../images/home/ticket.png')}
+.ticketTipUI .box .close{background-image: url('../images/home/close.png');width: 0.8rem;height: 0.8rem;position: absolute;left: 50%;margin-left: -0.4rem;bottom: -1.2rem}
+.ticketTipUI .box .info{color: #1d406f;padding-top: 7.6rem;}
+.ticketTipUI .box .info p{font-size: 0.3rem;font-weight: bold;}
+.ticketTipUI .box .baseBtn{position: relative;left: 0;bottom: auto;margin: 0.6rem auto 0;}
+
+/** tipUI */
+.tipUI{background: rgba(0, 0, 0, 0.8);z-index: 10;}
+.tipUI .box{position: absolute;left: 50%;width:6.6rem;margin-left: -3.3rem;text-align: center;top: 50%;transform: translateY(-50%);}
+.tipUI .box .info{background-image: url('../images/home/tip_box.png');width: 100%;height: 1.84rem;}
+.tipUI .box .info p{font-size: 0.3rem;color: #fff;max-width: 90%;line-height: 0.4rem;margin-top: -0.1rem;}
+.tipUI .box .close{background-image: url('../images/home/close.png');width: 0.8rem;height: 0.8rem;margin: 0.3rem auto 0;}
+
+/*---------------------------------------- 15:9 android 微信 && 16:9 浏览器----------------------*/
+@media screen and (device-width:360px) and (max-height:540px), screen and (device-width:320px) and (max-height:470px), screen and (device-width:375px) and (max-height:560px), screen and (device-width:414px) and (max-height:630px){
+
+}
+
+/*---------------------------------------- 18:9 android &&苹果X  微信 ----------------------*/
+@media screen and (device-width:360px) and (min-height:600px), screen and (device-width:393px) and (min-height:660px), screen and (device-width:412px) and (min-height:720px) , 
+screen and (device-width:375px) and (min-height:720px), screen and (device-width:414px) and (min-height:720px){
+
+}
+
+/*---------------------------------------- 单独对iphoneX 微信兼容----------------------*/
+@media screen and (device-width:375px) and (min-height:720px),screen and (device-width:414px) and (min-height:720px){
+
+}
+
+/*---------------------------------------- iphoneX 浏览器----------------------------------------------*/
+@media screen and (device-width:375px) and (min-height:630px) and (max-height:640px),screen and (device-width:414px) and (min-height:690px){
+
+}
+
+/*---------------------------------------- android----------------------*/
+@media screen and (device-width:360px), screen and (device-width:393px){
+
+}
+
+/*---------------------------------------- iphone ----------------------------------------------*/
+@media screen and (device-width:320px), screen and (device-width:375px), screen and (device-width:414px){
+
+}

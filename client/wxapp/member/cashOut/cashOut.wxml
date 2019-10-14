@@ -1,0 +1,42 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'提现'}}" />
+<view class="article cashOut" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+    <view class="content">
+        <view class="tabBox {{showClass}}">
+            <view class="tabTit ">
+                <view class="item" catchtap="tabChange" data-id='1'>未提取</view>
+                <view class="item" catchtap="tabChange" data-id='2'>已提取</view>
+            </view>
+            <view class="tabCont">
+                <scroll-view scroll-y class="cashListCont">
+                    <view class="list list1">
+                        <block wx:for="{{list1}}" wx:key="index">
+                            <view class="li ">
+                                <image src="/member/images/cashOut/bg.png" class="liBg"></image>
+                                <view class="num">
+                                    <text>{{item.num}}</text>元
+                                </view>
+                                <image src="/member/images/cashOut/btnCash.png" class="liBtn"></image>
+                            </view>
+                        </block>
+                    </view>
+                    <view class="list list2">
+                        <block wx:for="{{list2}}" wx:key="index">
+                            <view class="li ">
+                                <image src="/member/images/cashOut/bg1.png" class="liBg"></image>
+                                <view class="num">
+                                    <text>{{item.num}}</text>元
+                                </view>
+                                <image src="/member/images/cashOut/btnReviewing.png" class="liBtn" wx:if="{{!item.isSuc}}"></image>
+                            </view>
+                        </block>
+                    </view>
+                </scroll-view>
+                <image src="/images/couponSubscribe/arr.png" class="arr"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

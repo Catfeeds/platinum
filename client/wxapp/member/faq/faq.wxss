@@ -1,0 +1,38 @@
+/**标准16:9*/
+.faq .content{padding: 59rpx 37rpx 59rpx 44rpx;}
+.faq .content .bord1{height: 100%;}
+.faq .tit{display: block;font-size: 22rpx;line-height: 32rpx;font-weight: bold;color: #8a8989;text-align: center;position: relative;padding-top: 59rpx;}
+.faq .scrollView{height:calc( 100% - 193rpx);margin-top: 30rpx; }
+.faq .pic{width: 612rpx;margin: 0 auto;display: block;}
+
+/**
+   css media 适配
+*/
+
+/** iphone系列 */
+
+@media screen and (width:320px), screen and (width:375px), screen and (width:414px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓系列 */
+
+@media screen and (width:360px), screen and (width:393px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 15:9 */
+
+@media screen and (width:360px) and (max-height:540px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 18:9 */
+@media screen and (width:375px) and (min-height:724px),screen and (width:414px) and (min-height:808px),screen and (width:360px) and (min-height:700px) {
+	.cssMedia {
+  }
+
+}

@@ -1,0 +1,42 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'我的礼品'}}" />
+<view class="article myGift" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+    <view class="content">
+        <view class="tabBox {{showClass}}">
+            <view class="tabTit ">
+                <view class="item" catchtap="tabChange" data-id='1'>待发货</view>
+                <view class="item" catchtap="tabChange" data-id='2'>待收货</view>
+                <view class="item" catchtap="tabChange" data-id='3'>已收货</view>
+            </view>
+            <view class="tabCont">
+                <scroll-view scroll-y class="cashListCont">
+                    <view class="list list1">
+                        <block wx:for="{{list1}}" wx:key="index">
+                            <view class="li">
+                                <image src="{{appData.webUrl}}/myGift/pic{{(index+1)}}.jpg" class="pic"></image>
+                            </view>
+                        </block>
+                    </view>
+                    <view class="list list2">
+                        <block wx:for="{{list2}}" wx:key="index">
+                            <view class="li">
+                                <image src="{{appData.webUrl}}/myGift/pic{{(index+1)}}.jpg" class="pic"></image>
+                            </view>
+                        </block>
+                    </view>
+                    <view class="list list3">
+                        <block wx:for="{{list3}}" wx:key="index">
+                            <view class="li">
+                                <image src="{{appData.webUrl}}/myGift/pic{{(index+1)}}.jpg" class="pic"></image>
+                            </view>
+                        </block>
+                    </view>
+                </scroll-view>
+                <image src="/images/couponSubscribe/arr.png" class="arr"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

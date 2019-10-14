@@ -1,0 +1,141 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'我的卡包'}}" />
+<view class="article myCard" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+    <view class="content flexv {{showCoupon}}">
+        <view class="tabtit1 flex">
+            <view class='btn1' catchtap="conponChage" data-id="1">
+                <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                <text class="btn1txt">礼品券</text>
+            </view>
+            <view class='btn1' catchtap="conponChage" data-id="2">
+                <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                <text class="btn1txt">优惠券</text>
+            </view>
+        </view>
+        <view class="tabBox">
+            <view class="tabList giftListCont {{showGiftClass}}">
+                <view class="tabTit ">
+                    <view class="item" catchtap="tabChange1" data-id='1'>未使用</view>
+                    <view class="item" catchtap="tabChange1" data-id='2'>已使用</view>
+                    <view class="item" catchtap="tabChange1" data-id='3'>已过期</view>
+                </view>
+                <view class="tabCont">
+                    <scroll-view scroll-y class="scrollView">
+                        <view class="list list1">
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p1.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p2.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p1.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p2.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                            </view>
+                        </view>
+                        <view class="list list2">
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p1.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p1.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p2.jpg"></image>
+                            </view>
+                        </view>
+                        <view class="list list3">
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p1.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p2.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                            </view>
+                        </view>
+                    </scroll-view>
+                    <image src="/images/couponSubscribe/arr.png" class="arr"></image>
+                </view>
+            </view>
+            <view class="tabList couponListCont {{showCouponClass}}">
+                <view class="tabTit ">
+                    <view class="item" catchtap="tabChange2" data-id='1'>未使用</view>
+                    <view class="item" catchtap="tabChange2" data-id='2'>已使用</view>
+                    <view class="item" catchtap="tabChange2" data-id='3'>已过期</view>
+                </view>
+                <view class="tabCont">
+                    <scroll-view scroll-y class="scrollView">
+                        <view class="list list1">
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p1.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p2.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p1.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p2.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                            </view>
+                        </view>
+                        <view class="list list2">
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p1.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p2.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                            </view>
+                        </view>
+                        <view class="list list3">
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p1.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p2.jpg"></image>
+                            </view>
+                            <view class="li" catchtap="couponDetail">
+                                <image src="{{appData.webUrl}}integraMall/p3.jpg"></image>
+                            </view>
+                        </view>
+                    </scroll-view>
+                    <image src="/images/couponSubscribe/arr.png" class="arr"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

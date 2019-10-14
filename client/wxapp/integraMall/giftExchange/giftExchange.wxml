@@ -1,0 +1,45 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'确认兑换'}}" />
+<view class="article giftExchange" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+    <template is="alert" data="{{alert}}"/>
+    <view class="content wrap">
+        <!-- noAdd -->
+    	<view class="address bord1 {{noAdd}}">
+    		<view class="nodata">
+                添加地址      
+            </view>
+            <text class="hasAdd">
+                <text class="lab">姓名</text>{{address.name}} / <text class="lab">电话</text> {{address.name}}\n<text class="lab">地址</text>{{address.add}}
+            </text>
+    	</view>
+    	<view class="giftBox bord1">
+    		<text>
+                <text class="lab">兑换礼品</text> 便携式蓝牙音响灯
+                <text class="val">{{giftInfo.price}}</text>积分      
+            </text>
+    	</view>
+    	<view class="bord1 flex">
+    		<text class="lab">数量</text> 
+    		<view class="numedit">
+                <view bindtap="addnumber" data-id='1' class="Number1">-</view>
+                <view class='val'>{{giftInfo.num}}</view>
+                <view bindtap="addnumber" data-id='2' class='Number3'>+</view>
+            </view>
+    	</view>
+    	<view class="bord1">
+    		<view class="flex">
+                <text class="lab">总价</text> 
+                <view>
+                    <text class="val">{{giftInfo.total}}</text>积分        
+                </view>
+            </view>        
+    	</view>
+        <view class="btn1" catchtap="immediateExchange">
+            <image src="/images/index/btnbg.png" class="btn1bg"></image>
+            <text class="btn1txt">确认兑换</text>
+        </view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

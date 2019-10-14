@@ -1,0 +1,28 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'状态查询'}}" />
+<view class="article ticketUpload" style="height:{{appData.articleHeight}}" catchtouchmove="true">
+	<!----section begin----->
+	<template is="bg" />
+	<view class="content">
+		<view class="tit1">待审核</view>
+		<scroll-view scroll-y class="scrollView">
+			<view class="item bord1">
+				<text>单号：201911150001 \n 购买时间：2019-11-15 \n购买金额：2500 \n购买品类：戒指 \n购买品牌：周大福 \n</text>
+			</view>
+			<view class="item bord1">
+				<text>单号：201911150001 \n 购买时间：2019-11-15 \n购买金额：2500 \n购买品类：戒指 \n购买品牌：周大福 \n</text>
+			</view>
+			<view class="item bord1">
+				<text>单号：201911150001 \n 购买时间：2019-11-15 \n购买金额：2500 \n购买品类：戒指 \n购买品牌：周大福 \n</text>
+			</view>
+		</scroll-view>
+		<view class="botcont">
+			<text class="tips">活动期间于指定城市消费5倍积分\nAR返现仅限指定店铺消费小票</text>
+			<view class='btn1' catchtap="upload">
+				<image src="/images/index/btnbg.png" class="btn1bg"></image>
+				<text class="btn1txt">小票上传</text>
+			</view>
+		</view>
+	</view>
+</view>
+<import src="/pages/temp/temp.wxml" />

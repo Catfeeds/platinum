@@ -1,0 +1,75 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'完善信息'}}" />
+<view class="article personal  {{modal_show}}" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+    <template is="alert" data="{{alert}}"/>
+    <scroll-view scroll-y class="content">
+        <view class="wrap">
+            <view class="probox ">
+                <view class="txt1">资料完整度</view>
+                <view class="line "><view class="active" style="width:10%"><text>10%</text></view></view>
+                <view class="flex num">
+                    <text>0%</text>
+                    <text class="last">100%</text>
+                </view>
+            </view>
+            <view class="tips">*首次完善全部资料即可获奖励100积分</view>
+            <view class="bord1">
+                <input class="name" placeholder="姓名" value="{{person.name}}" bindinput="nameChange"/>
+            </view>
+            <picker class="bord1 select" bindchange="sexChange" value="{{index}}" range="{{sexArr}}">
+                <view class="picker">{{person.sex}}</view>
+            </picker>
+            <picker class="bord1 select" bindchange="birthdayChange" mode="date" fields="month" end="{{today}}">
+                <view class="picker">{{person.birthday}}</view>
+            </picker>
+            <view class="tips">* 注册当年不满18周岁者无法注册</view>
+            <view class="bord1 areas " catchtap="choosecity">
+                <view class='picker prov'>{{person.addInfo.sheng.name}}</view>
+                <view class='picker city'>{{person.addInfo.shi.name}}</view>
+                <view class='picker dist'>{{person.addInfo.qu.name}}</view>
+            </view>
+            <view class="bord1">
+                <textarea class="add" placeholder="详细地址" value="{{person.add}}" bindinput="addChange" ></textarea>
+            </view>
+            <view class="bord1">
+                <input class="email" placeholder="邮箱"  value="{{person.email}}"  bindinput="emailChange"/>
+            </view>
+            <picker class="bord1 select" bindchange="marriageChange" value="{{index}}" range="{{marriageArr}}">
+                <view class="picker">{{person.marriage}}</view>
+            </picker>
+            <picker class="bord1 select" bindchange="commemorationDayChange" mode="date" fields="day" end="{{today}}">
+                <view class="picker">{{person.commemorationDay}}</view>
+            </picker>
+            <view class="tips">* 性别、姓名、生日只能修改一次</view>
+            <view class='btn1' catchtap="comSub">
+                <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                <text class="btn1txt">完善资料</text>
+            </view>
+        </view>
+    </scroll-view>
+
+    <van-popup show="{{ show }}" position="bottom" bind:close="onCityClose" custom-class="citychoose">
+        <van-area area-list="{{ areaList }}" value="{{addInfo.qu.id}}" bind:confirm="CitySure" bind:cancel="CityCancel" bind:change="CityChange" />
+    </van-popup>
+
+    <!-- modal -->
+    <view class="modal">
+        <view class="cont flexv">
+            <image src="/images/common/modalBg.png" class="modalBg"></image>
+            <image src="/images/modal/signPic.jpg" class="subsPic"></image>
+            <image src="{{userInfo.avatarUrl}}" class="avtar"></image>
+            <view class="txtbox">
+                <view class="tit">恭喜，完善成功！</view>
+                <view class="txt">已获得100积分</view>
+            </view>
+            <view class='btn1' catchtap="toIntegraMall">
+                <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                <text class="btn1txt">前往积分商城</text>
+            </view>
+            <image src="/images/common/close.png" class="close" catchtap="modalHide"></image>
+        </view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

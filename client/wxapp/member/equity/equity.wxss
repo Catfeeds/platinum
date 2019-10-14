@@ -1,0 +1,42 @@
+/**标准16:9*/
+.Equity .tit{width: 258rpx;height: 52rpx;margin: 122rpx auto 109rpx;}
+.Equity .tit .spanBg{width: 100%;height: 100%;position: absolute;left: 0;top:0;}
+.Equity .tit text{position: relative;display: block;text-align: center;line-height: 52rpx;font-size: 24rpx;}
+.Equity .list{ flex-wrap: wrap;justify-content:flex-start; padding-left: 86rpx; }
+.Equity .list:after{content: '';}
+.Equity .list .item{border:#9cd5eb 1rpx solid;border-radius:11rpx;box-shadow:rgba(0,0,0,.1) 2rpx 2rpx 10rpx 2rpx;width: 170rpx;height: 138rpx;margin:0 15rpx 25rpx;text-align: center;}
+.Equity .list .item:before{content: '';background:rgba(255,255,255,.6);position: absolute;left: 8rpx;top:8rpx;bottom: 0;right: 0;border-radius: 11rpx;}
+.Equity .list .item .ico{width: 64rpx;height: 64rpx;display: block;margin: 0 auto;position: relative;}
+.Equity .list .item text{font-size: 19rpx;color: #254474;padding-top: 15rpx;position: relative;}
+
+/**
+   css media 适配
+*/
+
+/** iphone系列 */
+
+@media screen and (width:320px), screen and (width:375px), screen and (width:414px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓系列 */
+
+@media screen and (width:360px), screen and (width:393px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 15:9 */
+
+@media screen and (width:360px) and (max-height:540px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 18:9 */
+@media screen and (width:375px) and (min-height:724px),screen and (width:414px) and (min-height:808px),screen and (width:360px) and (min-height:700px) {
+	.cssMedia {
+  }
+
+}

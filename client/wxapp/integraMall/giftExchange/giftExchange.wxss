@@ -1,0 +1,60 @@
+/**标准16:9*/
+.giftExchange{}
+.giftExchange .wrap{padding: 54rpx 40rpx;}
+.giftExchange .bord1{padding: 27rpx 40rpx;margin-bottom: 39rpx;color: #8a8989;font-size: 25rpx;}
+.giftExchange .btn1{position: absolute;bottom: 70rpx;left: 50%;transform:translate(-50%,0);}
+.giftExchange .address .hasAdd{font-size: 25rpx;line-height: 22rpx;color: #8a8989;position: relative;}
+.giftExchange .bord1 .lab{font-size: 25rpx;font-weight: bold;margin-right: 13rpx;letter-spacing: 3rpx;position: relative;}
+.giftExchange .nodata{display: none;}
+.giftExchange .noAdd .nodata{display: block;}
+.giftExchange .noAdd .hasAdd{display: none;  }
+
+.giftExchange .giftBox text{position: relative;color: #8a8989;font-size: 25rpx;}
+.giftExchange .bord1 .val{font-size: 30rpx;color: #0b2b5d;letter-spacing: 3rpx;font-weight: bold;}
+
+.numedit {display: inline-block;}
+.numedit view{display: inline-block;padding: 10rpx;font-size: 35rpx;color: #9cd5eb;}
+.numedit .Number1,.numedit .Number3{padding:10rpx 20rpx;}
+
+
+/**
+   css media 适配
+*/
+
+/** iphone系列 */
+
+@media screen and (width:320px), screen and (width:375px), screen and (width:414px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓系列 */
+
+@media screen and (width:360px), screen and (width:393px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 15:9 */
+
+@media screen and (width:360px) and (max-height:540px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 18:9 */
+
+@media screen and (width:360px) and (min-height:600px),
+       screen and (width:412px) and (min-height:680px),
+       screen and (width:393px) {
+  .cssMedia {
+  }
+}
+
+/** iphoneX */
+
+@media screen and (width:375px) and (min-height:724px),
+       screen and (width:414px) and (min-height:808px) {
+  .cssMedia {
+  }
+}

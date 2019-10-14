@@ -1,0 +1,25 @@
+.index {height: 100%;}
+.index .card{width: 750rpx;height: 516rpx;}
+.index .card .cardBg{position: absolute;width: 100%;height: 100%;left: 0;top:0;}
+.index .card .avtar{border-radius: 100%;width: 240rpx;height: 240rpx;position: absolute;left: 253rpx;top:106rpx;}
+.index .card .nickName{color: #9cd5eb;font-size: 37rpx;position: absolute;left: 70rpx;top:335rpx;}
+.index .card .nickName:after{content:'';position: absolute;width: 41rpx;height: 2rpx;background: #a2d7ec;left: 0;bottom: -10rpx;}
+.index .card .cardEle1{width: 162rpx;height: 88rpx;position: absolute;left: 500rpx;top:313rpx;}
+.index .card .cardEle2{width: 229rpx;height: 32rpx;position: absolute;left: 466rpx;top:432rpx;}
+.index .card .cardEle2 image{width: 100%;height: 100%;position: absolute;left: 0;top:0;}
+.index .card .cardEle2 text{font-size: 19rpx;text-align: center;position: relative;width: 100%;line-height: 31rpx;display: block;}
+.index .card .myCard{color: #fff;font-size: 23rpx;position: absolute;left: 65rpx;top:69rpx;}
+.index .card .myPointer{position: absolute;left: 68rpx;top:404rpx;color: #8a8989;font-size: 18rpx;}
+.index .card .myPointer text{display: block;font-size: 38rpx;padding-top: 13rpx;}
+
+
+
+.index .activeBox .banTit{width: 356rpx;height: 53rpx;margin: 92rpx auto 45rpx;display: block;}
+.index .activeBox .item{width: 707rpx;height: 367rpx;margin: 0 auto 25rpx;}
+.index .activeBox .item image{width: 100%;height:100%;}
+
+.menubox{padding: 46rpx 0 0;text-align: center;}
+.menubox .btn{text-align: center;line-height: 80rpx;border-radius: 10rpx;margin-bottom: 20rpx;width: 177rpx;display: inline-block;}
+.menubox .menuIco{width: 88rpx;height: 88rpx;display: block;margin: 0 auto;}
+.menubox .btn text{font-size: 20rpx;color: #8a8989;border-right: #9cd5eb 1rpx solid;display: block;line-height: 20rpx;margin-top: 30rpx;}
+.menubox .btn:last-child text{border-right: none;}

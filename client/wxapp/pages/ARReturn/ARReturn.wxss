@@ -1,0 +1,69 @@
+/**标准16:9*/
+.camera{height: 100%;width: 100%;}
+.arBtn{width: 420rpx;height: 420rpx;position: absolute;left: 50%;transform:translate(-50%,0);bottom: 175rpx;}
+.arBtn .i{border-radius: 100%;border: #9cd5eb 2rpx solid;position: absolute;left: 0;top: 0;width: 100%;height:100%;opacity: 0;}
+.arBtn .i:nth-child(2){-webkit-animation: tipAnim 1.5s 0s infinite ;}
+.arBtn .i:nth-child(3){-webkit-animation: tipAnim 1.5s 0.5s infinite ;}
+@-webkit-keyframes tipAnim{
+  0%{-webkit-transform: scale(.8); opacity: 0;}
+  30%{-webkit-transform: scale(.8); opacity: 1;}
+  99%{-webkit-transform: scale(1); opacity: 0;}
+  100%{-webkit-transform: scale(.8); opacity: 0;}
+}
+.arBtn .btnTips{width: 268rpx;height: 214rpx;position: absolute;left: 50%;top:50%;transform:translate(-50%,-50%);}
+
+
+.ARModal{position: absolute;width:100%;height:100%;left:0;top:0;background:rgba(0,0,0,.7);z-index: 10;opacity: 0;pointer-events:none;transition:all .3s;}
+.ARModal .cont{width:665rpx;height:1138rpx;position: absolute;left:50%;margin-left:-332rpx;top:50%;margin-top:-569rpx;justify-content:space-between;padding:7rpx 0 9rpx;}
+.ARModal .ARModalBg{position: absolute;width: 100%;height: 100%;left: 0;top:0;}
+.ARModal .avtarBg{position: absolute;width: 376rpx;height: 384rpx;left: 140rpx;top:36rpx;}
+.ARModal .avtar{position: absolute;width: 222rpx;height: 222rpx;border-radius: 100%;left: 220rpx;top:118rpx;}
+.ARmodal_show .ARModal {pointer-events:all;opacity: 1;}
+.ARModal .txtbox {padding-top: 420rpx;color: #fff;text-align: center;}
+.ARModal .txtbox .tit{font-size: 30rpx;line-height: 48rpx;}
+.ARModal .txtbox .txt .num{font-size: 198rpx;font-weight: normal;display: inline-block;line-height: 1;vertical-align: top;margin-right: 10rpx;}
+.ARModal .txtbox .txt .span{font-size: 30rpx;font-weight: bold;display: inline-block;line-height: 1;vertical-align: top;margin-top: 148rpx;}
+.ARModal .txt2Box {padding: 35rpx 0;border:none;border-top: #fff 1rpx solid;border-bottom: #fff 1rpx solid;width: 290rpx;margin: 0 auto;}
+.ARModal .txt2Box .txt2{font-size: 20rpx;color: #fff;text-align: center;line-height: 38rpx;}
+.ARModal .btn1{margin: 75rpx auto 0;}
+/**
+   css media 适配
+*/
+
+/** iphone系列 */
+
+@media screen and (width:320px), screen and (width:375px), screen and (width:414px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓系列 */
+
+@media screen and (width:360px), screen and (width:393px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 15:9 */
+
+@media screen and (width:360px) and (max-height:540px) {
+  .cssMedia {
+  }
+}
+
+/** 安卓 18:9 */
+
+@media screen and (width:360px) and (min-height:600px),
+       screen and (width:412px) and (min-height:680px),
+       screen and (width:393px) {
+  .cssMedia {
+  }
+}
+
+/** iphoneX */
+
+@media screen and (width:375px) and (min-height:724px),
+       screen and (width:414px) and (min-height:808px) {
+  .cssMedia {
+  }
+}

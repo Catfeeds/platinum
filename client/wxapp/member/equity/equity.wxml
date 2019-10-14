@@ -1,0 +1,21 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'会员权益'}}" />
+<view class="article Equity" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+    <view class="content">
+    	<view class="tit">
+        	<image src="/images/Equity/spanBg.png" class="spanBg"></image>
+        	<text>铂金VIP会员</text>
+        </view>
+        <view class="list flex">
+	    	<block wx:for="{{dataArr}}" wx:key="index">
+	    		<view class="item flexv">
+	        		<image src="/images/Equity/ico{{(index+1)}}.png" class="ico"></image>
+	        		<text>{{item}}</text>
+	        	</view>
+	    	</block>
+        </view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

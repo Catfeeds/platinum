@@ -1,0 +1,222 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.7",
+	"appid": "wxf4526bfb44f4aa1b",
+	"projectname": "%E9%93%82%E9%87%91%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 23,
+			"list": [
+				{
+					"id": 0,
+					"name": "home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "测试index",
+					"pathName": "pages/index/index",
+					"query": "redirectUrl=/pages/signIn/signIn&id=4&openid=666",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "scene=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "signIn",
+					"pathName": "pages/signIn/signIn",
+					"query": "reqUrl=/pages/signIn/signIn&id=4&openid=666",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index分享",
+					"pathName": "pages/index/index",
+					"query": "redirectUrl=%2Fpages%2Fwebview%2Fwebview%3Furl%3Dhttp%253A%252F%252Ft.sky.be-xx.com%252Fwxapp%252F2019%252FPlatinumWxApp%252Fclient%252Fhtml%252F%253Fsource%253D%25E6%259D%25A5%25E6%25BA%2590",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ticketUpload",
+					"pathName": "pages/ticketUpload/ticketUpload",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "myPointer",
+					"pathName": "member/myPointer/myPointer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "myCard",
+					"pathName": "member/myCard/myCard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "personal",
+					"pathName": "pages/personal/personal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "giftExchange",
+					"pathName": "integraMall/giftExchange/giftExchange",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "礼品券",
+					"pathName": "pages/giftCertificates/giftCertificates",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "couponSubscribe",
+					"pathName": "pages/couponSubscribe/couponSubscribe",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "activitySign",
+					"pathName": "pages/activitySign/activitySign",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Equity",
+					"pathName": "member/Equity/Equity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "couponDetail",
+					"pathName": "member/couponDetail/couponDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ticketEdit",
+					"pathName": "pages/ticketEdit/ticketEdit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "shareFriend",
+					"pathName": "pages/shareFriend/shareFriend",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "rules",
+					"pathName": "member/rules/rules",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cashOut",
+					"pathName": "member/cashOut/cashOut",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "accountSet",
+					"pathName": "member/accountSet/accountSet",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ARReturn",
+					"pathName": "pages/ARReturn/ARReturn",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "myGift",
+					"pathName": "member/myGift/myGift",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "giftDetail",
+					"pathName": "integraMall/giftDetail/giftDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "giftExchange",
+					"pathName": "integraMall/giftExchange/giftExchange",
+					"scene": null
+				}
+			]
+		}
+	}
+}

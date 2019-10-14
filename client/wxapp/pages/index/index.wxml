@@ -1,0 +1,45 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'铂金小程序'}}" />
+<view class="article index" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <image src="/images/index/p1.jpg" class="p1"></image>
+    <image src="/images/index/slogan.jpg" class="slogan"></image>
+    <div class="flexv bottombox">
+        <view class="txtbox {{active}}" catchtap="agree">
+            <view class="checkbox"></view> 我已知悉并同意被收取个人信息</view>
+        <view class="btnbox">
+            <button class='btn1' open-type="getPhoneNumber" bindgetphonenumber="getAuth" data-auth='getPhoneNumber'>
+                <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                <text class="btn1txt">授权手机号</text>
+            </button>
+            <button class='btn1' open-type="getUserInfo" wx:if='{{showPhonebtn}}' bindgetuserinfo="getAuth" data-auth='getUserInfo'>
+                <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                <text class="btn1txt">即刻开启</text>
+            </button>
+        </view>
+    </div>
+
+    <!----section end----->
+
+</view>
+
+<!-- 手机号授权 -->
+<view wx:if="{{showPhonePanel}}" class="phonePanel">
+    <view class="phonePanelBox">
+        <view class="title">【铂金】</view>
+        <view class="info">
+            <view class="tip">
+                <text>需要授权后才能使用服务</text>
+                <text>请使用在铂金会员预留手机号</text>
+                <text>系统将同步为您更新预留资料</text>
+            </view>
+        </view>
+        <view class="btn">
+            <button open-type="getPhoneNumber" lang="zh_CN" bindgetphonenumber="getPhoneNumber">【去授权】</button>
+        </view>
+    </view>
+</view>
+
+
+<import src="/pages/temp/temp.wxml" />
+

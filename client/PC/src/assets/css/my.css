@@ -1,0 +1,71 @@
+.el-tabs__item {
+  width: 203px;
+  height: 50px;
+  border-radius: 0;
+  border: 0;
+  background: #eaeaea;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  line-height: 50px;
+  margin-right: 22px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  color: #666666;
+}
+
+.el-tabs__nav,
+.el-tabs--card>.el-tabs__header .el-tabs__nav {
+  border: 0;
+}
+
+.el-tabs__nav-scroll {
+  background: #f5f6fa
+}
+
+.el-tabs__item.is-active {
+  background: #fff;
+  color: #666666;
+}
+
+
+.el-input__inner,
+.el-select:hover .el-input__inner,
+.el-select .el-input__inner:focus,
+.el-select:hover .el-input__inner,
+.el-select .el-input__inner:focus,
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: #233f68;
+  border-radius: 20px;
+}
+
+
+/** 重写按钮样式 */
+.baseBtn,
+.baseBtn:hover,
+.baseBtn.is-active,
+.baseBtn:active {
+  background: #233f68;
+  border-color: #233f68;
+}
+
+.baseBtn {
+  min-width: 150px
+}
+
+.paginationStyle {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background: #233f68 !important;
+}
+
+.main .el-input__inner,
+.main .el-select:hover .el-input__inner,
+.main .el-select .el-input__inner:focus,
+.main .el-select:hover .el-input__inner,
+.main .el-select .el-input__inner:focus,
+.main .el-select .el-input.is-focus .el-input__inner{
+  border-radius: 30px ;
+}

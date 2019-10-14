@@ -1,0 +1,40 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'兑换详情'}}" />
+<view class="article giftDetail" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+	<template is="bg" />
+    <!----section begin----->
+    <view class="content flexv">
+		<image class="pic" src="{{appData.webUrl}}giftDetail/pic1.jpg"></image>
+        <view class="contbox">
+            <view class="bord1">
+                <view class="tit">便携式蓝牙音响灯</view>
+                <view class="scrollbox">
+                    <scroll-view scroll-y class="scrollView">
+                        <view class="item time">
+                            <text class="lab">可兑换时间</text>
+                            <text class="txt1">2019.10.01-2019.10.07</text>
+                        </view>
+                        <view class="item">
+                            <text class="lab">物品详情</text>
+                            <text class="txt1">先进低音技术，360°环绕音效,蓝牙4.2链接更顺畅，配对简单，传输快，距离远，耗电低。三档调光，亮度随心 采用0.2W LED灯珠环绕排列，25000h寿命，内置5000mAh大容量电池，轻巧便携,梦幻七彩音箱灯。</text>
+                        </view>
+                        <view class="item time">
+                            <text class="lab">兑换详情</text>
+                            <text class="txt1 txt2"><text class="bold">5500</text>积分可兑换一份</text>
+                        </view>
+                        <picker class="item time select"  mode="selector" value="{{getWay.id}}"  range="{{getWay.arr}}" bindchange="getWayChange">
+				            <text class="lab fwn">领取方式</text>
+				            <text class="txt1">{{getWay.val}} </text>
+				        </picker>
+                       
+                    </scroll-view>
+                </view>
+                <view class="btn1" catchtap="giftExchange">
+                    <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                    <text class="btn1txt">即刻兑换</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

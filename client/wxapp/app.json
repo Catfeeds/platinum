@@ -1,0 +1,63 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/signIn/signIn",
+        "pages/member/member",
+        "pages/ticketUpload/ticketUpload",
+        "pages/personal/personal",
+        "pages/ticketEdit/ticketEdit",
+        "pages/webview/webview",
+        "pages/activitySign/activitySign",
+        "pages/ARReturn/ARReturn",
+        "pages/shareFriend/shareFriend",
+        "pages/giftCertificates/giftCertificates",
+        "pages/couponSubscribe/couponSubscribe",
+        "pages/home/home"
+    ],
+    "subpackages": [
+        {
+            "root": "member",
+            "pages": [
+                "couponDetail/couponDetail",
+                "myPointer/myPointer",
+                "accountSet/accountSet",
+                "equity/equity",
+                "myGift/myGift",
+                "rules/rules",
+                "cashOut/cashOut",
+                "faq/faq",
+                "myCard/myCard"
+            ]
+        },{
+            "root": "integraMall",
+            "pages": [
+                "list/list",
+                "giftDetail/giftDetail",
+                "giftExchange/giftExchange"
+            ]
+        }
+    ],
+    "preloadRule": {
+        "pages/index/index": {
+            "network": "all",
+            "packages": [
+                "member",
+                "integraMall"
+            ]
+        }
+    },
+    "window":
+    {
+        "navigationStyle":"custom",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "铂金小程序",
+        "navigationBarTextStyle": "black"
+    },
+    "navigateToMiniProgramAppIdList": [
+        "wxd4ce61a2d6a1afab",
+        "wxd4ce61a2d6a1afab",
+        "wx240696d46c9671d7"
+    ],
+    "sitemapLocation": "sitemap.json"
+}

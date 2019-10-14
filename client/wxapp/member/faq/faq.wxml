@@ -1,0 +1,15 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'FAQ'}}" />
+<view class="article faq" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+    <view class="content ">
+    	<view class="bord1">
+        	<text class="tit">国际铂金协会(PGI)\n2019个人会员FAQ</text>
+        	<scroll-view scroll-y class="scrollView">
+        		<image src="{{appData.webUrl}}faq/pic.png" class="pic" mode="widthFix"></image>
+        	</scroll-view>
+    	</view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

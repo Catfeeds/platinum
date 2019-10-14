@@ -1,0 +1,32 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'每日签到'}}" />
+<view class="article signin {{modal_show}}" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+    <view class="content">
+    	<calendar selected="{{selected}}"   isOpen="true" class="calendarbox" id="calendarbox" />
+	    <view class="packup btn1 {{signClass}}" catchtap='packup'>
+	        <image src="/images/index/btnbg.png" class="btn1bg"></image>
+	        <text class="btn1txt">{{signTxt}}</text>
+	    </view>
+    </view>
+
+    <!-- modal -->
+    <view class="modal">
+    	<view class="cont flexv">
+    		<image src="/images/common/modalBg.png" class="modalBg"></image>
+	    	<image src="/images/modal/signPic.jpg" class="subsPic"></image>
+	    	<image src="{{userInfo.avatarUrl}}" class="avtar"></image>
+	    	<view class="txtbox">
+	    		<view class="tit">恭喜，签到成功！</view>
+	    		<view class="txt">已获得10积分</view>
+	    	</view>
+	    	<button class='btn1' catchtap="toIntegraMall">
+                <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                <text class="btn1txt">前往积分商城</text>
+            </button>
+    		<image src="/images/common/close.png" class="close" catchtap="modalHide"></image>
+    	</view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

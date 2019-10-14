@@ -1,0 +1,16 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'礼品券'}}" />
+<view class="article giftCertificates" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <view class="flexv">
+	    <view class="picbox">
+	    	<image src="/images/giftCertificates/pic.png" class="pic"></image>
+	    </view>
+    	<text class="txt1">恭喜您获得铂金到店礼品券 \n可在我的卡包中查看</text>
+	    <view class='btn1'>
+	        <image src="/images/index/btnbg.png" class="btn1bg"></image>
+	        <text class="btn1txt" catchtap="couponSubscribe">即刻预约领取</text>
+	    </view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

@@ -1,0 +1,42 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'AR红包返现'}}" />
+<view class="article ARReturn {{ARmodal_show}}" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <view class="content">
+    	<camera device-position="back" flash="off" binderror="error" class="camera">
+    		<cover-view class="arBtn" catchtap="arBtn">
+	        	<cover-image src="/images/ARReturn/btnTips.png" class="btnTips"></cover-image>
+	        	<cover-view class="i"></cover-view>
+	        	<cover-view class="i"></cover-view>
+	        </cover-view>
+
+	        <!-- ARModal -->
+		    <cover-view class="ARModal">
+		    	<cover-view class="cont ">
+		    		<cover-image src="/images/ARReturn/modalBg2.png" class="ARModalBg"></cover-image>
+			    	<cover-image src="/images/ARReturn/avtarBg.png" class="avtarBg"></cover-image>
+			    	<cover-image src="{{userInfo.avatarUrl}}" class="avtar"></cover-image>
+			    	<cover-view class="txtbox">
+			    		<cover-view class="tit">恭喜{{userInfo.nickname}}! \n您已获得返现金额</cover-view>
+			    		<cover-view class="txt">
+			    			<cover-view class='num'>88</cover-view><cover-view class="span">元</cover-view>
+			    		</cover-view>
+			    	</cover-view>
+			    	<cover-view class="txt2Box">
+			    		<cover-view class="txt2">小票审核通过后即可提现，</cover-view>
+				    	<cover-view class="txt2">每周二将统一发放返现金额，</cover-view>
+				    	<cover-view class="txt2">敬请留意</cover-view>
+			    	</cover-view>
+			    	<cover-view class='btn1' catchtap="toIntegraMall">
+		                <cover-image src="/images/index/btnbg.png" class="btn1bg"></cover-image>
+		                <cover-view class="btn1txt">确认</cover-view>
+		            </cover-view>
+		    	</cover-view>
+		    </cover-view>
+
+    		
+    	</camera>
+        
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

@@ -1,0 +1,32 @@
+@import '../../app.wxss';
+
+.integral{height: 100%;}
+.integral .topbar{background: #0b2b5d;padding: 40rpx 58rpx 38rpx 66rpx;width: 100%;flex: 0 0 128rpx ;}
+.integral .topbar .curIntegral{color: #9cd5eb;font-size: 25rpx;}
+.integral .topbar .curIntegral text{font-weight: bold;font-size: 25rpx;}
+.integral .topbar .line{position: absolute;width: 100%;height:4rpx;left: 0;bottom: 0;}
+
+.integral .tabBox{padding-top: 27rpx;flex:auto; overflow: hidden;width: 100%}
+.integral .tabBox .tabTit{text-align: center;font-size: 0;}
+.integral .tabBox .tabTit .item{width: 302rpx;height: 55rpx;background: #c0c0c0;transition:background .3s,color .3s;border-radius: 9rpx 9rpx  0 0;margin: 0 17rpx;display: inline-block;font-size: 25rpx;letter-spacing: 7rpx;font-weight: bold;line-height: 55rpx;color: #fff;}
+
+.integral .showClass1 .tabTit .item:nth-child(1){color: #9cd5eb;background: rgba(255,255,255,.6);box-shadow: 7rpx -3rpx 7rpx 0rpx rgba(207,213,216,.5);}
+.integral .showClass2 .tabTit .item:nth-child(2){color: #9cd5eb;background: rgba(255,255,255,.6);box-shadow: 7rpx -3rpx 7rpx 0rpx rgba(207,213,216,.5);}
+.integral .tabBox .tabCont{width: 690rpx;left: 27rpx; border-radius: 20rpx;padding: 21rpx 13rpx;overflow: hidden;position: absolute;top:80rpx;bottom: 30rpx;box-shadow: 7rpx 3rpx 7rpx 0rpx rgba(207,213,216,.5);background: rgba(255,255,255,.6);}
+
+.integral .giftList{  flex-wrap: wrap;display: none; }
+.integral .giftList .li{flex: 0 1 325rpx;padding:10rpx;text-align: center;background: #fff;margin-top: 15rpx;}
+.integral .giftList .li.locked{pointer-events:none;}
+.integral .giftList .li.locked:before{content: '';background: rgba(0,0,0,.7);position: absolute;left: 0;top:0;width: 100%;height: 100%;z-index: 2;}
+.integral .giftList .li.locked:after{content: '库存不足';position: absolute;left: 50%;top:50%;-webkit-transform:translate(-50%,-50%);color: #fff;font-size: 20rpx;z-index: 2;}
+.integral .giftList .li image{width: 305rpx;height: 345rpx;}
+.integral .giftList .li .proName{font-size: 25rpx;line-height: 28rpx;color: #9cd5eb;}
+.integral .giftList .li .sorce{font-size: 16rpx;line-height: 31rpx;color: #8a8989;}
+.integral .giftListCont{height: 95%;}
+.integral .couponList{display: none; }
+.integral .couponList .li{width: 658rpx;height: 300rpx;margin-top: 20rpx;}
+.integral .couponList .li image{width: 100%;height: 100%;}
+
+.integral .showClass1 .giftList{display: flex;align-items: center;justify-content:  space-between;}
+.integral .showClass2 .couponList{display: block;}
+

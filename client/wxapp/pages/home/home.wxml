@@ -1,0 +1,31 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title}}" />
+<view class="article  {{modal_show}}" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <view class='content'>
+        <index style="display:{{showIndex == 0?'block':'none'}}" id="index" userInfo="{{userInfo}}"  appData="{{appData}}"  class="box"></index>
+        <integralMall style="display:{{showIndex == 1?'block':'none'}}" id="integralMall" class="box"  appData="{{appData}}" ></integralMall>
+        <member style="display:{{showIndex == 2?'block':'none'}}" id="member"  class="box"  appData="{{appData}}"></member>
+    </view>
+    <template is="footer" data="{{showIndex}}" />
+
+
+	<!-- modal -->
+    <view class="modal">
+    	<view class="cont flexv">
+    		<image src="/images/common/modalBg.png" class="modalBg"></image>
+	    	<image src="/images/modal/couponSubPic.jpg" class="subsPic"></image>
+	    	<view class="txtbox">
+	    		<view class="tit">恭喜，预约成功！</view>
+	    		<view class="txt">请前往我的卡包查看预约结果</view>
+	    	</view>
+	    	<view class='btn1' catchtap="myCard">
+                <image src="/images/index/btnbg.png" class="btn1bg"></image>
+                <text class="btn1txt">我的卡包</text>
+            </view>
+    		<image src="/images/common/close.png" class="close" catchtap="modalHide"></image>
+    	</view>
+    </view>
+
+</view>
+<import src="/pages/temp/temp.wxml" />

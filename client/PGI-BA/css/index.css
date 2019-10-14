@@ -1,0 +1,68 @@
+/* ---------------------------------------- 默认css针对16:9标准比例屏幕微信----------------------------------------*/
+
+.hide{display: none}
+.contv{height: 10rem;}
+
+article{background-image: url('../images/home/bg.jpg');background-size: cover}
+section{position: absolute;left: 0;top: 0;width: 100%;height: 100%;background-image: url('../images/home/bg.jpg');background-size: cover}
+.logo{background-image: url('../images/home/logo.png');width: 1.1rem;height: 1.1rem;margin: 0 auto;}
+.baseBtn{background-image: url('../images/home/btn.png');width: 2.86rem;height: 0.54rem;line-height: 0.58rem;color: #1d406f;position: absolute;left: 50%;margin-left: -1.43rem;bottom: 0;text-align: center;}
+
+/** loginUI */
+.loginUI{text-align: center;}
+.loginUI .info{padding-top: 0.7rem;}
+.loginUI .info p{color:#8a8989;font-size: 0.3rem;font-weight: bold;letter-spacing: 0.1rem;line-height: 0.4rem;}
+.loginUI .form{width: 6.7rem;margin: 0.8rem auto 0;}
+.loginUI .form .box{background: rgba(255, 255, 255, 0.5);border: 1px solid #cde3ed;border-radius: 0.2rem;height: 0.7rem;color: #8a8989;font-size: 0.25rem;padding: 0 0.4rem;margin-bottom: 0.5rem;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1)}
+.loginUI .form .box input{background: none;font-size: 0.25rem;margin-left: 0.3rem;color: #8a8989;}
+
+/** homeUI */
+.homeUI{text-align: center;}
+.homeUI .icon{background-image: url('../images/home/icon.png');width: 2rem;height: 2rem;margin: 2.46rem auto 1rem;}
+.homeUI .info{color:#8a8989;}
+.homeUI .info h3{font-weight: bold;line-height: 0.4rem}
+.homeUI .info p{font-size: 0.25rem;line-height: 0.4rem;}
+
+/** sucUI */
+.sucUI{background: #0b2b5d}
+.sucUI .icon{background-image: url('../images/home/suc.jpg');width: 100%;height: 7.5rem;}
+.sucUI .icon .title{background-image: url('../images/home/suc_icon.png');width: 2.1rem;height: 0.6rem;position: absolute;left: 50%;margin-left: -1.05rem;bottom: 0.2rem}
+
+
+
+.tipUI{background: rgba(0, 0, 0, 0.8)}
+.tipUI .box{position: absolute;left: 50%;width:6.6rem;margin-left: -3.3rem;text-align: center;top: 50%;transform: translateY(-50%);}
+.tipUI .box .info{background-image: url('../images/home/tip_box.png');width: 100%;height: 1.84rem;}
+.tipUI .box .info p{font-size: 0.3rem;color: #fff;max-width: 90%;line-height: 0.4rem;margin-top: -0.1rem;}
+.tipUI .box .close{background-image: url('../images/home/close.png');width: 0.8rem;height: 0.8rem;margin: 0.3rem auto 0;}
+
+/*---------------------------------------- 15:9 android 微信 && 16:9 浏览器----------------------*/
+@media screen and (device-width:360px) and (max-height:540px), screen and (device-width:320px) and (max-height:470px), screen and (device-width:375px) and (max-height:560px), screen and (device-width:414px) and (max-height:630px){
+
+}
+
+/*---------------------------------------- 18:9 android &&苹果X  微信 ----------------------*/
+@media screen and (device-width:360px) and (min-height:600px), screen and (device-width:393px) and (min-height:660px), screen and (device-width:412px) and (min-height:720px) , 
+screen and (device-width:375px) and (min-height:720px), screen and (device-width:414px) and (min-height:720px){
+
+}
+
+/*---------------------------------------- 单独对iphoneX 微信兼容----------------------*/
+@media screen and (device-width:375px) and (min-height:720px),screen and (device-width:414px) and (min-height:720px){
+
+}
+
+/*---------------------------------------- iphoneX 浏览器----------------------------------------------*/
+@media screen and (device-width:375px) and (min-height:630px) and (max-height:640px),screen and (device-width:414px) and (min-height:690px){
+
+}
+
+/*---------------------------------------- android----------------------*/
+@media screen and (device-width:360px), screen and (device-width:393px){
+
+}
+
+/*---------------------------------------- iphone ----------------------------------------------*/
+@media screen and (device-width:320px), screen and (device-width:375px), screen and (device-width:414px){
+
+}

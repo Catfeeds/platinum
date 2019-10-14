@@ -1,0 +1,45 @@
+<template name="footer">
+    <view class='footer'>
+        <view class="footnav {{showIndex==0?'active':''}}" data-index="0" catchtap="footclick">
+            <image src="/images/common/iHome.png" class="footIco"></image>
+            首页
+        </view>
+        <view class="footnav {{showIndex==1?'active':''}}" data-index="1" catchtap="footclick">
+            <image src="/images/common/iShop.png" class="footIco"></image>
+            积分商城
+        </view>
+        <view class="footnav {{showIndex==2?'active':''}}" data-index="2" catchtap="footclick">
+            <image src="/images/common/iMember.png" class="footIco"></image>
+            会员卡
+        </view>
+    </view>
+</template>
+<template name="header">
+    <view class='navigationBar' style='padding-top:{{appData.navigationPadding}};' catchtouchmove="true">
+        <view style='height:{{appData.navigationHeight}};'>
+            <view class="navbar">
+                <view catchtap="back" class="ico back">
+                    <image src="/images/common/back.png"></image>
+                </view>
+                <view catchtap="home" class="ico home">
+                    <image src="/images/common/home.png"></image>
+                </view>
+            </view>
+            <text class='title'>{{title}}</text>
+        </view>
+    </view>
+</template>
+<template name="bg">
+    <image src="/images/common/bg1.jpg" class="bg1"></image>
+</template>
+<template name="alert">
+    <view class="alert {{alert.txt ? 'alertShow':''}}">
+        <view class="contv">
+            <view class="alertbox">
+                <image src="/images/common/alertBg.png" class="alertBg"></image>
+                <text class="txt">{{alert.txt}}</text>
+            </view>
+            <image src="/images/common/close.png" class="close" catchtap="alertHide"></image>
+        </view>
+    </view>
+</template>

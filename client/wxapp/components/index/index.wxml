@@ -1,0 +1,45 @@
+<!--components/commonTop.wxml-->
+<scroll-view scroll-y class='index'>
+    <view class="card">
+        <image src="/images/home/cardBg.png" class="cardBg"></image>
+        <view class="myCard" catchtap="myCard">我的卡包 ></view>
+        <image src="{{userInfo.avatarUrl}}" class="avtar"></image>
+        <view class="nickName">{{userInfo.nickName}}</view>
+        <view class="myPointer" catchtap="myPointer">当前会员积分<text>5500</text></view>
+        <image src="/images/home/cardEle1.png" class="cardEle1"></image>
+        <view class="cardEle2">
+            <image src="/images/home/cardEle2.png"></image>
+            <text>铂金VIP会员</text>
+        </view>
+    </view>
+    <view class="menubox">
+        <view class="btn" catchtap="ticketUpload">
+            <image src="/images/home/ico1.png" class="menuIco"></image>
+             <text>小票上传</text>
+        </view>
+        <view class="btn" catchtap="shareFriend">
+            <image src="/images/home/ico2.png" class="menuIco"></image>
+             <text>好友助力</text>
+        </view>
+        <view class="btn" catchtap="personal">
+            <image src="/images/home/ico3.png" class="menuIco"></image>
+             <text>个人信息</text>
+        </view>
+        <view class="btn" catchtap="signIn">
+            <image src="/images/home/ico4.png" class="menuIco"></image>
+             <text>每日签到</text>
+        </view>
+    </view>
+    <view class="activeBox">
+        <image src="/images/home/banTit.png" class="banTit"></image>
+        <view class="item" catchtap="videoInterction">
+            <image src="{{appData.webUrl}}home/banVideo.png"></image>
+        </view>
+        <view class="item" catchtap="ticketUpload">
+            <image src="{{appData.webUrl}}home/banAr.png"></image>
+        </view>
+        <view class="item" catchtap="activitySign">
+            <image src="{{appData.webUrl}}home/banSigin.png"></image>
+        </view>
+    </view>
+</scroll-view>

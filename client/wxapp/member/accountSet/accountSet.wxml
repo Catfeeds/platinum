@@ -1,0 +1,33 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'账户设置'}}" />
+<view class="article" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+	<template is="alert" data="{{alert}}"/>
+    <view class="content">
+    	<view class="form">
+    		<view class="bord1 ">
+    			<view class="link flex">
+		        	修改头像 
+		        	<view class="avtarBox" catchtap="upImg" >
+		        		<image  src="/member/images/accountSet/avtarBg.png" class="avtarBg"></image>
+		        		<image  catchtap="upImg"  src="{{upPic}}"  mode="aspectFill"  class="pic"></image>
+		        	</view>
+    			</view>
+	        </view>
+		    <view class="bord1"><input bindinput="nickname" value="{{nickname}}" class="input " type="number" placeholder="修改昵称"></input></view>
+		    <view class="bord1 " catchtap="personal">
+		    	<view class="link txt1">
+		    		完善资料
+		    	</view>
+		    </view>
+		    <view class='btn1' catchtap="accountSetSave">
+				<image src="/images/index/btnbg.png" class="btn1bg"></image>
+				<text class="btn1txt">保存</text>
+			</view>
+    	</view>
+
+
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

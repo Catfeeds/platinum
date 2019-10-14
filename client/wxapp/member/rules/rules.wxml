@@ -1,0 +1,15 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'会员章程'}}" />
+<view class="article rules" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+    <view class="content ">
+    	<view class="bord1">
+        	<text class="tit">2019国际铂金协会(PGI)\n臻享荟会员章程</text>
+        	<scroll-view scroll-y class="scrollView">
+        		<image src="{{appData.webUrl}}rules/pic.png" class="pic" mode="widthFix"></image>
+        	</scroll-view>
+    	</view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

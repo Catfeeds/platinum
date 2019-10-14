@@ -1,0 +1,106 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'积分明细'}}" />
+<view class="article myPointer" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+    <view class="content flexv">
+            <view class="card">
+                <image src="/images/home/cardBg.png" class="cardBg"></image>
+                <view class="nickName">{{userInfo.nickName}}</view>
+                <image src="{{userInfo.avatarUrl}}" class="avtar"></image>
+                <view class="myPointer" catchtap="myPointer">当前会员积分<text>5500</text></view>
+                <image src="/images/home/cardEle1.png" class="cardEle1"></image>
+                <view class="cardEle2">
+                    <image src="/images/home/cardEle2.png"></image>
+                    <text>铂金VIP会员</text>
+                </view>
+            </view>
+            <view class="padm30">
+                <view class="title">积分明细查询</view>
+                <view class="tips">*可查询3个月内的积分明细</view>
+                <view class="pickerbox flex">
+                    <picker mode="date" value="{{date}}" start="{{prevDate}}" end="{{today}}" bindchange="bindDateChange">
+                        <view class="picker bord1">
+                            {{date}}
+                        </view>
+                    </picker>
+                    <picker mode="date" value="{{date2}}" start="{{prevDate}}" end="{{today}}" bindchange="bindDateChange2">
+                        <view class="picker bord1">
+                            {{date2}}
+                        </view>
+                    </picker>
+                </view>
+                <view class="scbox bord1">
+                    <scroll-view scroll-y class="pointerList ">
+                        <view class="item flex">
+                            <view class="tit">
+                                注册积分
+                                <text class="date">2018-10-10</text>
+                            </view>
+                            <view class="num">+100</view>
+                        </view>
+                        <view class="item flex">
+                            <view class="tit">
+                                注册积分
+                                <text class="date">2018-10-10</text>
+                            </view>
+                            <view class="num">+100</view>
+                        </view>
+                        <view class="item flex">
+                            <view class="tit">
+                                注册积分
+                                <text class="date">2018-10-10</text>
+                            </view>
+                            <view class="num">+100</view>
+                        </view>
+                        <view class="item flex">
+                            <view class="tit">
+                                注册积分
+                                <text class="date">2018-10-10</text>
+                            </view>
+                            <view class="num">+100</view>
+                        </view>
+                        <view class="item flex">
+                            <view class="tit">
+                                注册积分
+                                <text class="date">2018-10-10</text>
+                            </view>
+                            <view class="num">+100</view>
+                        </view>
+                        <view class="item flex">
+                            <view class="tit">
+                                注册积分
+                                <text class="date">2018-10-10</text>
+                            </view>
+                            <view class="num">+100</view>
+                        </view>
+                        <view class="item flex">
+                            <view class="tit">
+                                注册积分
+                                <text class="date">2018-10-10</text>
+                            </view>
+                            <view class="num">+100</view>
+                        </view>
+                        <view class="item flex">
+                            <view class="tit">
+                                注册积分
+                                <text class="date">2018-10-10</text>
+                            </view>
+                            <view class="num">+100</view>
+                        </view>
+                        <view class="item flex">
+                            <view class="tit">
+                                注册积分
+                                <text class="date">2018-10-10</text>
+                            </view>
+                            <view class="num">+100</view>
+                        </view>
+                       
+                    </scroll-view>
+                    <image src="/images/couponSubscribe/arr.png" class="arr"></image>
+
+                </view>
+            </view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

@@ -1,0 +1,9 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'会员中心'}}" />
+<view class="article" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <view class="content">
+        <view class="tit">会员中心</view>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />

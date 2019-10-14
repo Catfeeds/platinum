@@ -1,0 +1,39 @@
+<!-- 顶级view的class name默认article -->
+<template is="header" data="{{appData,title:'好友助力'}}" />
+<view class="article shareFriend" style='height:{{appData.articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <template is="bg" />
+    <view class="content flexv">
+        <view class="topbox">
+            <image src="/images/shareFriend/friendBg.png" class="friendBg"></image>
+            <view class="topFive">
+            	<block wx:for="{{topFive}}" wx:key="index">
+            		<view class="li">
+	                    <image class="avtar" src="{{item.avtar}}"></image>
+	                </view>
+            	</block>
+               
+            </view>
+        </view>
+        <view class="txt1">目前共有<text>{{list.length}}</text>位好友已接受邀请</view>
+        <view class="list ">
+        	<view class="bord1">
+            <scroll-view scroll-y class="scrollView">
+                <block wx:for="{{list}}" wx:key="index">
+	                <view class="li">
+	                    <image class="avtar" src="{{item.avtar}}"></image>
+	                    <view class="name">{{item.nickname}}</view>
+	                    <view class="date">{{item.date}}</view>
+	                </view>
+                </block>
+            </scroll-view>
+            <image src="/images/couponSubscribe/arr.png" class="arr"></image>
+            </view>
+        </view>
+        <button class='btn1' open-type="share">
+            <image src="/images/index/btnbg.png" class="btn1bg"></image>
+            <text class="btn1txt">即刻邀请</text>
+        </button>
+    </view>
+</view>
+<import src="/pages/temp/temp.wxml" />
